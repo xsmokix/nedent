@@ -5,10 +5,29 @@ body {
     background-color: white;
 }
 
+.navbar{
+	border: 0;
+	border-color: transparent;
+	border-radius: 0;
+}
 
+.navbar-default{
+	border-color: transparent;
+}
 
-.logo, .cofepris{
+.navbar-static-top{
+	overflow: hidden;
+}
+.container-fluid{
+	overflow: hidden;
+}
+.logo{
 	max-height: 50px;
+}
+
+.cofepris{
+	max-height: 50px;
+
 }
 
 /* centrar menu */
@@ -139,6 +158,7 @@ body {
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
+.fade-carousel .slides .slide-0,
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3,
@@ -148,6 +168,9 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-0 {
+  background-image: url(../img/bglogo.png); 
 }
 .fade-carousel .slides .slide-1 {
   background-image: url(../img/bg1.png); 
@@ -198,12 +221,22 @@ box-shadow: 0px 7px 20px -2px rgba(0,0,0,0.75);
 .doctor{
 	position: relative;
 	top: -70px;
-	right: -10px;
+	left: 10px;
 	max-height: 542px;
+}
+
+.instalaciones{
+  position: relative;
+  top: -70px;
+  right: 0px;
+  min-height: 542px;
 }
 
 .textoGris{
 	color: #6F6F6E;
+}
+.textoBlanco{
+	color: white;
 }
 
 .textoBlanco{
@@ -214,6 +247,19 @@ box-shadow: 0px 7px 20px -2px rgba(0,0,0,0.75);
 	color: #3B3E85;
 }
 
+.textoNinos{
+  margin-top: 3.5em;
+  font-size: 2.2em;
+}
+
+.textoConvenios{
+  margin-top: .5em;
+  font-size: 1.5em;
+}
+
+.textoAgenda{
+	font-size: 1.4em;
+}
 .fondoAzul{
 	background-color: #3B3E85;
 }
@@ -221,6 +267,34 @@ box-shadow: 0px 7px 20px -2px rgba(0,0,0,0.75);
 .fondoAzul1{
 	background-color: #2B2B5C;
 }
+
+.fondoNinos{
+  /*background-color: #6cc7eb;*/
+  height: 100vh;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  background-image: url(../img/bgninos.png); 
+  background-size: 800px 820px;
+  min-height: 820px;
+}
+
+.fondoAzulNinos{
+  background-color: #6cc7eb;
+}
+
+.fondoContacto{
+	/* height: 100vh; */
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+
+  background-image: url(../img/doctora.png); 
+  background-size: 530px 100%;
+
+}
+
 #especialidades{
 	font-size: 2em;
 	color: white;
@@ -245,4 +319,187 @@ box-shadow: 0px 7px 20px -2px rgba(0,0,0,0.75);
 
 .activorosa{
 	border-bottom: 8px solid #B05093;
+}
+
+/*
+h1 {text-align:center; margin:100px auto;
+font-weight:200;
+font-size:70px;}
+*/
+
+.contenedorNinos {
+
+  background: 
+/*  -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%)*/
+ -webkit-linear-gradient(-65deg, rgba(225, 81, 121, 1) 30%, rgba(108, 199, 235, 0) 0%);
+ 
+ min-height: 450px;
+}
+
+
+.contenedorInstalaciones i{
+  position: relative;
+  padding-top: 3em;
+
+}
+
+/* galeria instalaciones */
+
+#header-carousel .carousel-inner .item {
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  width: 100%;
+  height: 520px;
+}
+.carousel-control i {
+  margin-top: 170px;
+}
+.jumbotrongaleria .slide {
+  background: #dadada;
+  width: 100%;
+  height: 520px;
+}
+.carousel{
+	overflow: hidden !important;
+}
+/*
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.text {
+  max-width: 540px;
+  margin: 0 auto;
+  padding-top: 175px;
+  opacity: 0;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+.more {
+  background: #e2393e;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  line-height: 4;
+  -webkit-box-shadow: 0px 3px 0px 0px #932427;
+  -moz-box-shadow: 0px 3px 0px 0px #932427;
+  box-shadow: 0px 3px 0px 0px #932427;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.more:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: -3px;
+}*/
+.slide,
+.title,
+.text {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+/* galeria instalaciones */
+
+.jumbotrongaleria{
+  padding: 0 !important;
+  min-height: 520px;
+}
+
+
+
+
+.fondoConvenios{
+  background-image: url(../img/convenios.png);
+  
+  height: 600px;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 1100px auto;
+}
+
+
+input, textarea{
+
+-webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47) !important;
+-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47) !important;
+box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47) !important;
+}
+
+
+.telefono{
+	font-size: .8em;
+	font-weight: bold;
+}
+
+
+.button {
+ 
+  width: 80%;
+  height: 100px;
+ 
+  position: relative;
+}
+
+.button h2{
+	padding: 20px;
+}
+.button:before,
+.button:after {
+  width: 30px;
+  height: 100%;
+  content: '';
+  position: absolute;
+}
+.button:before {
+  border-top: 4px solid #B05093;
+  border-bottom: 4px solid #B05093;
+  border-left: 4px solid #B05093;
+  top: 0;
+  left: 0;
+}
+.button:after {
+  border-top: 4px solid #B05093;
+  border-right: 4px solid #B05093;
+  border-bottom: 4px solid #B05093;
+  bottom: 0;
+  right: 0;
+}
+
+.direccion{
+	font-size: .5em;
+}
+
+.triangle {
+	position: absolute;
+	top: 45px;
+	right: 0;
+width: 0;
+height: 0;
+border-style: solid;
+opacity: 0.8;
+border-color: transparent #b05093 transparent transparent;
+
 }
